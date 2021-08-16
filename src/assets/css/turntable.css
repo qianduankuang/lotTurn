@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+.t-bg {
+    width: 100%;
+    height: 100%;
+    background: #eaeaf2;
+    overflow: hidden;
+}
+
+.tt {
+    background: rgba(0, 0, 0, 0.05);
+    width: 90%;
+    height: 48px;
+    margin: 0 auto;
+    border-radius: 8px;
+    color: #333;
+    line-height: 48px;
+    font-size: 18px;
+    margin: 15px auto 5px;
+}
+
+.btnContainer {
+    display: flex;
+    position: fixed;
+    bottom: 40px;
+    width: 100%;
+}
+
+.btnContainer div {
+    flex: .5;
+    margin: 0 20px;
+}
+
+.del {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #F96868;
+    position: relative;
+}
+
+.del::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background: #fff;
+    left: 50%;
+    margin-left: -10px;
+    top: 50%;
+    margin-top: -1px;
+}
+
+.d-wrap {
+    font-size: 16px;
+    width: 100%;
+}
+
+.d-wrap li {
+    position: relative;
+    width: 100%;
+    height: 42px;
+    text-align: left;
+    text-indent: 1em;
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+.d-wrap p {
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    height: 42px;
+    line-height: 42px;
+    left: 5%;
+    position: absolute;
+    right: 18%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.d-wrap p input {
+    background: none;
+    border: none;
+    height: 42px;
+    line-height: 42px;
+    font-size: 16px;
+    outline: none;
+    width: 100%;
+}
+
+.d-wrap .del {
+    float: right;
+    margin-right: 5%;
+    margin-top: 6px;
+}
+
+.d-wrap .del:active {
+    background: #d03333;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.icon-bar {
+    display: block;
+    background-color: black;
+    width: 16px;
+    height: 1px;
+    border-radius: 1px;
+    margin: 4px 0;
+}
+
+.btnSingeContainer {
+    width: 100%;
+    position: fixed;
+    bottom: 20px;
+}
+
+.btnSingeContainer .sheel-button {
+    position: relative;
+    width: 80%;
+    left: 10%;
+}
+
+.colorfilter {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
